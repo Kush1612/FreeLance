@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - MACEAST</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html">
+                <img src="logo.png" alt="MACEAST Construction Logo" class="h-16">
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html#home" class="text-gray-600 hover:text-amber-500 transition duration-300">Home</a>
+                <a href="index.html#expertise" class="text-gray-600 hover:text-amber-500 transition duration-300">Expertise</a>
+                <a href="index.html#projects" class="text-gray-600 hover:text-amber-500 transition duration-300">Projects</a>
+                <a href="vendor.html" class="text-gray-600 hover:text-amber-500 transition duration-300">Vendor Registration</a>
+                <a href="index.html#about" class="text-gray-600 hover:text-amber-500 transition duration-300">About</a>
+                <a href="cv.html" class="text-amber-500 font-semibold transition duration-300">Careers</a>
+                <a href="index.html#locations" class="bg-amber-500 text-white px-4 py-2 rounded-full hover:bg-amber-600 transition duration-300">Contact Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html#home" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+            <a href="index.html#expertise" class="block py-2 px-4 text-sm hover:bg-gray-200">Expertise</a>
+            <a href="index.html#projects" class="block py-2 px-4 text-sm hover:bg-gray-200">Projects</a>
+            <a href="index.html#about" class="block py-2 px-4 text-sm hover:bg-gray-200">About</a>
+            <a href="cv.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Careers</a>
+            <a href="index.html#locations" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact Us</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        <div class="max-w-4xl mx-auto bg-white p-8 sm:p-12 rounded-lg shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">Join Our Team</h1>
+            <p class="text-lg text-gray-600 text-center mb-8">Submit your application by following the steps below.</p>
+
+            <!-- Progress Bar -->
+            <div class="mb-12">
+                <div class="flex items-center justify-center">
+                    <div class="step-item active flex-1 text-center">
+                        <div class="step-circle bg-amber-500 text-white">1</div>
+                        <p class="mt-2 text-sm">Contact Details</p>
+                    </div>
+                    <div class="flex-1 border-t-2 border-gray-300"></div>
+                    <div class="step-item flex-1 text-center">
+                        <div class="step-circle">2</div>
+                        <p class="mt-2 text-sm text-gray-500">Education</p>
+                    </div>
+                    <div class="flex-1 border-t-2 border-gray-300"></div>
+                    <div class="step-item flex-1 text-center">
+                        <div class="step-circle">3</div>
+                        <p class="mt-2 text-sm text-gray-500">Experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Steps -->
+            <form id="cv-form">
+                <!-- Step 1: Contact Details -->
+                <div id="step-1" class="form-step">
+                    <h2 class="text-2xl font-semibold mb-6">Step 1: Contact Details & CV</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="fullName" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                        </div>
+                        <div>
+                            <label for="cv" class="block text-gray-700 font-medium mb-2">Attach CV</label>
+                            <input type="file" id="cvFile" name="cvFile" class="w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-amber-100 file:text-amber-700 hover:file:bg-amber-200" required>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-right">
+                        <button type="button" class="next-btn bg-amber-500 text-white px-6 py-2 rounded-full hover:bg-amber-600 transition duration-300">Save & Next</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Education -->
+                <div id="step-2" class="form-step hidden">
+                     <h2 class="text-2xl font-semibold mb-6">Step 2: Educational Background</h2>
+                     <div id="education-fields" class="space-y-6">
+                        <!-- Education Entry Template -->
+                     </div>
+                     <button type="button" id="add-education" class="mt-4 text-amber-600 hover:text-amber-700 font-semibold">+ Add Another Qualification</button>
+                     <div class="mt-8 flex justify-between">
+                        <button type="button" class="prev-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-400 transition duration-300">Previous</button>
+                        <button type="button" class="next-btn bg-amber-500 text-white px-6 py-2 rounded-full hover:bg-amber-600 transition duration-300">Save & Next</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Experience -->
+                <div id="step-3" class="form-step hidden">
+                    <h2 class="text-2xl font-semibold mb-6">Step 3: Work Experience</h2>
+                     <div id="experience-fields" class="space-y-6">
+                        <!-- Experience Entry Template -->
+                     </div>
+                     <button type="button" id="add-experience" class="mt-4 text-amber-600 hover:text-amber-700 font-semibold">+ Add Another Experience</button>
+                    <div class="mt-8 flex justify-between">
+                        <button type="button" class="prev-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-400 transition duration-300">Previous</button>
+                        <button type="submit" class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition duration-300 disabled:opacity-50">Submit Application</button>
+                    </div>
+                </div>
+            </form>
+             <!-- Success Message -->
+            <div id="success-message" class="hidden text-center py-10">
+                <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-900">Application Submitted!</h2>
+                <p class="text-gray-600 mt-2">Thank you for your interest in MACEAST. We will review your application and be in touch shortly.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-gray-400 py-6 mt-16">
+        <div class="container mx-auto px-6 flex flex-col sm:flex-row justify-between items-center">
+            <p class="text-sm text-center sm:text-left mb-4 sm:mb-0">&copy; 2020-2024 MACEAST. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // --- Form logic ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx0FGXQUic5OjbdQSXUy5OZ7BQ8s9B_0RrWOblawfeq2533l7V0oPcqwgmJi6Z_D7o9/exec";
+
+
+            const form = document.getElementById('cv-form');
+            const steps = Array.from(document.querySelectorAll('.form-step'));
+            const nextBtns = document.querySelectorAll('.next-btn');
+            const prevBtns = document.querySelectorAll('.prev-btn');
+            const progressSteps = document.querySelectorAll('.step-item');
+            const successMessage = document.getElementById('success-message');
+            const submitBtn = form.querySelector('button[type="submit"]');
+
+            let currentStep = 0;
+            let formData = JSON.parse(sessionStorage.getItem('cvFormData')) || {};
+
+            function updateProgress() {
+                progressSteps.forEach((step, index) => {
+                    const circle = step.querySelector('.step-circle');
+                    const text = step.querySelector('p');
+                    if (index < currentStep) {
+                        circle.classList.add('bg-green-500', 'text-white');
+                        circle.classList.remove('bg-amber-500');
+                        text.classList.remove('text-gray-500');
+                    } else if (index === currentStep) {
+                        circle.classList.add('bg-amber-500', 'text-white');
+                        text.classList.remove('text-gray-500');
+                    } else {
+                        circle.classList.remove('bg-amber-500', 'bg-green-500', 'text-white');
+                        text.classList.add('text-gray-500');
+                    }
+                });
+            }
+
+            function showStep(stepIndex) {
+                steps.forEach((step, index) => {
+                    step.classList.toggle('hidden', index !== stepIndex);
+                });
+                currentStep = stepIndex;
+                updateProgress();
+            }
+            
+            function collectAllData() {
+                const allData = {};
+                allData.fullName = formData.fullName || '';
+                allData.email = formData.email || '';
+                allData.phone = formData.phone || '';
+                allData.education = JSON.stringify(formData.education || []);
+                allData.experience = JSON.stringify(formData.experience || []);
+                allData.submittedAt = new Date().toISOString();
+                return allData;
+            }
+
+            function saveStepData() {
+                const stepInputs = steps[currentStep].querySelectorAll('input, textarea, select');
+                stepInputs.forEach(input => {
+                    if (input.type !== 'file' && input.name) {
+                       formData[input.name] = input.value;
+                    }
+                });
+                if(currentStep === 1) { // Education
+                    formData.education = [];
+                    document.querySelectorAll('.education-entry').forEach(entry => {
+                        const eduData = {
+                            degree: entry.querySelector('[name="degree"]').value,
+                            university: entry.querySelector('[name="university"]').value,
+                            year: entry.querySelector('[name="year"]').value,
+                        };
+                        if(eduData.degree) formData.education.push(eduData);
+                    });
+                }
+                if(currentStep === 2) { // Experience
+                    formData.experience = [];
+                     document.querySelectorAll('.experience-entry').forEach(entry => {
+                        const expData = {
+                            jobTitle: entry.querySelector('[name="jobTitle"]').value,
+                            company: entry.querySelector('[name="company"]').value,
+                            dates: entry.querySelector('[name="dates"]').value,
+                        };
+                        if(expData.jobTitle) formData.experience.push(expData);
+                    });
+                }
+                sessionStorage.setItem('cvFormData', JSON.stringify(formData));
+            }
+            
+            function loadStepData() {
+                 const stepInputs = steps[currentStep].querySelectorAll('input, textarea, select');
+                 stepInputs.forEach(input => {
+                    if(formData[input.name] && input.type !== 'file' && input.name) {
+                        input.value = formData[input.name];
+                    }
+                 });
+            }
+
+            nextBtns.forEach(button => {
+                button.addEventListener('click', () => {
+                    if (currentStep < steps.length - 1) {
+                        saveStepData();
+                        showStep(currentStep + 1);
+                        loadStepData();
+                    }
+                });
+            });
+
+            prevBtns.forEach(button => {
+                button.addEventListener('click', () => {
+                    if (currentStep > 0) {
+                        saveStepData();
+                        showStep(currentStep - 1);
+                        loadStepData();
+                    }
+                });
+            });
+
+            const educationContainer = document.getElementById('education-fields');
+            const addEducationBtn = document.getElementById('add-education');
+            
+            function addEducationField() {
+                const div = document.createElement('div');
+                div.className = 'education-entry p-4 border border-gray-200 rounded-lg relative';
+                div.innerHTML = `
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Degree/Certificate</label>
+                            <input type="text" name="degree" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">University/Institution</label>
+                            <input type="text" name="university" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm">
+                        </div>
+                         <div>
+                            <label class="block text-sm font-medium text-gray-700">Year of Completion</label>
+                            <input type="text" name="year" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm">
+                        </div>
+                    </div>`;
+                educationContainer.appendChild(div);
+            }
+            addEducationBtn.addEventListener('click', addEducationField);
+
+            const experienceContainer = document.getElementById('experience-fields');
+            const addExperienceBtn = document.getElementById('add-experience');
+
+            function addExperienceField() {
+                const div = document.createElement('div');
+                div.className = 'experience-entry p-4 border border-gray-200 rounded-lg relative';
+                div.innerHTML = `
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Job Title</label>
+                            <input type="text" name="jobTitle" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Company</label>
+                            <input type="text" name="company" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Dates of Employment</label>
+                            <input type="text" name="dates" placeholder="e.g., 2018 - 2022" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500 sm:text-sm">
+                        </div>
+                    </div>`;
+                experienceContainer.appendChild(div);
+            }
+            addExperienceBtn.addEventListener('click', addExperienceField);
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                if (WEB_APP_URL.includes("YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE")) {
+                     alert("Form submission is not configured. Please set up the Google Apps Script URL.");
+                     return;
+                }
+                saveStepData();
+
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = `
+                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Submitting...`;
+
+                const cvFile = document.getElementById('cvFile').files[0];
+                if (!cvFile) {
+                    alert('Please attach your CV.');
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Submit Application';
+                    return;
+                }
+                
+                const reader = new FileReader();
+                reader.readAsDataURL(cvFile);
+                reader.onloadend = () => {
+                    const fileData = {
+                        base64: reader.result.split(',')[1],
+                        type: cvFile.type,
+                        name: cvFile.name
+                    };
+                    
+                    const applicationData = collectAllData();
+                    applicationData.file = fileData;
+
+                    fetch(WEB_APP_URL, {
+                        method: 'POST',
+                        body: JSON.stringify(applicationData)
+                    })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        form.classList.add('hidden');
+                        successMessage.classList.remove('hidden');
+                        sessionStorage.removeItem('cvFormData');
+                    })
+                    .catch(error => {
+                        console.error("Submission failed:", error);
+                        alert("There was an error submitting your application. Please try again.");
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Submit Application';
+                    });
+                };
+            });
+
+            // Initialize form
+            loadStepData();
+            addEducationField(); 
+            addExperienceField(); 
+            showStep(0);
+        });
+    </script>
+</body>
+
+</html>
+

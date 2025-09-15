@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACEAST - Building the Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#">
+                <img src="logo.png" alt="MACEAST Construction Logo" class="h-16">
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-amber-500 transition duration-300">Home</a>
+                <a href="#expertise" class="text-gray-600 hover:text-amber-500 transition duration-300">Expertise</a>
+                <a href="#projects" class="text-gray-600 hover:text-amber-500 transition duration-300">Projects</a>
+                <a href="vendor.html" class="text-gray-600 hover:text-amber-500 transition duration-300">Vendor Registration</a>
+                <a href="#about" class="text-gray-600 hover:text-amber-500 transition duration-300">About</a>
+                <a href="cv.html" class="text-gray-600 hover:text-amber-500 transition duration-300">Careers</a>
+                <a href="#locations" class="bg-amber-500 text-white px-4 py-2 rounded-full hover:bg-amber-600 transition duration-300">Contact Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#home" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+            <a href="#expertise" class="block py-2 px-4 text-sm hover:bg-gray-200">Expertise</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-200">Projects</a>
+            <a href="vendor.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Vendor Registration</a>
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-200">About</a>
+            <a href="cv.html" class="block py-2 px-4 text-sm hover:bg-gray-200">Careers</a>
+            <a href="#locations" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen w-full overflow-hidden">
+            <div class="hero-slider h-full w-full">
+               <!-- Slide 1 -->
+                <img src="assets/Gemini_Generated_Image_nq7ft6nq7ft6nq7f.png" alt="Modern architectural building at dusk" class="slide active">
+                <!-- Slide 2 -->
+                <img src="assets/Gemini_Generated_Image_3o0qsj3o0qsj3o0q.png" alt="Construction site with crane against a sunset" class="slide">
+                <!-- Slide 3 -->
+                <img src="assets/Gemini_Generated_Image_3or5i33or5i33or5.png" alt="Elegantly finished modern interior of a building" class="slide">
+            </div>
+            <!-- Content -->
+            <div class="absolute inset-0 flex items-center justify-center text-white z-10">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Excellence in Construction</h1>
+                    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Delivering quality projects with integrity and precision across KSA, UAE, and Sudan.</p>
+                    <a href="#locations" class="bg-amber-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-amber-600 transition duration-300">Get a Free Quote</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Our Expertise Section -->
+        <section id="expertise" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Expertise</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto mb-8">Comprehensive solutions from concept to completion.</p>
+                    <div class="mt-4 w-24 h-1 bg-amber-500 mx-auto"></div>
+                </div>
+                <div class="flex overflow-x-auto space-x-8 pb-8 hide-scrollbar">
+                    <!-- Expertise Card 1 -->
+                    <div class="group relative service-card bg-white p-8 rounded-lg shadow-lg text-center w-80 flex-shrink-0 overflow-hidden">
+                        <div class="service-icon bg-amber-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-110">
+                            <svg class="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Construction Management</h3>
+                        <!-- Hover Content -->
+                        <div class="absolute inset-0 bg-amber-500 bg-opacity-95 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                           <p class="text-white">Overseeing every phase of the construction process to ensure projects are completed on time and within budget.</p>
+                        </div>
+                    </div>
+                    <!-- Expertise Card 2 -->
+                    <div class="group relative service-card bg-white p-8 rounded-lg shadow-lg text-center w-80 flex-shrink-0 overflow-hidden">
+                        <div class="service-icon bg-amber-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-110">
+                             <svg class="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Project Management</h3>
+                        <!-- Hover Content -->
+                        <div class="absolute inset-0 bg-amber-500 bg-opacity-95 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                           <p class="text-white">Expert planning, execution, and control to achieve specific project goals and success criteria.</p>
+                        </div>
+                    </div>
+                    <!-- Expertise Card 3 -->
+                    <div class="group relative service-card bg-white p-8 rounded-lg shadow-lg text-center w-80 flex-shrink-0 overflow-hidden">
+                        <div class="service-icon bg-amber-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-110">
+                            <svg class="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Engineering Services</h3>
+                        <!-- Hover Content -->
+                        <div class="absolute inset-0 bg-amber-500 bg-opacity-95 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                           <p class="text-white">Providing comprehensive engineering and design solutions tailored to project requirements.</p>
+                        </div>
+                    </div>
+                    <!-- Expertise Card 4 -->
+                    <div class="group relative service-card bg-white p-8 rounded-lg shadow-lg text-center w-80 flex-shrink-0 overflow-hidden">
+                        <div class="service-icon bg-amber-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-110">
+                            <svg class="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">MEP Contractor</h3>
+                         <!-- Hover Content -->
+                        <div class="absolute inset-0 bg-amber-500 bg-opacity-95 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                           <p class="text-white">Specialized in Mechanical, Electrical, and Plumbing systems for integrated building services.</p>
+                        </div>
+                    </div>
+                    <!-- Expertise Card 5 -->
+                    <div class="group relative service-card bg-white p-8 rounded-lg shadow-lg text-center w-80 flex-shrink-0 overflow-hidden">
+                        <div class="service-icon bg-amber-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-110">
+                            <svg class="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Marine Fabrication</h3>
+                         <!-- Hover Content -->
+                        <div class="absolute inset-0 bg-amber-500 bg-opacity-95 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                           <p class="text-white">Advanced fabrication services for marine and offshore structures, ensuring durability and compliance.</p>
+                        </div>
+                    </div>
+                    <!-- Expertise Card 6 -->
+                    <div class="group relative service-card bg-white p-8 rounded-lg shadow-lg text-center w-80 flex-shrink-0 overflow-hidden">
+                        <div class="service-icon bg-amber-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 transition-transform duration-300 group-hover:scale-110">
+                           <svg class="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Supply Chain Management</h3>
+                         <!-- Hover Content -->
+                        <div class="absolute inset-0 bg-amber-500 bg-opacity-95 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                           <p class="text-white">Efficiently managing the flow of goods, materials, and information from source to site.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Projects</h2>
+                    <p class="text-lg text-gray-600 mt-2">A Showcase of Our Commitment to Excellence</p>
+                    <div class="mt-4 w-24 h-1 bg-amber-500 mx-auto"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://www.propertyeportal.com/static/b3f9bac928ac6303adb95602c7fae9c9/e88a6/Bilhab-Tower-Image1.jpg" alt="Project 1" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Bilhub Tower</h3>
+                            <p class="text-gray-600 mb-4">47, Marasi Drive Street , Dubai </p>
+                            <a href="#" class="text-amber-500 hover:text-amber-600 font-semibold">View Details &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://res.listglobally.com/listings/5774371/106030068/a86227c2f4ba7f7bb0d515fe413049b7?mode=crop&width=512&height=384" alt="Project 2" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Jumeriah Lake Villas</h3>
+                            <p class="text-gray-600 mb-4">An exclusive community of luxury villas with ocean views.</p>
+                            <a href="#" class="text-amber-500 hover:text-amber-600 font-semibold">View Details &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://static.propsearch.ae/photos/dubai/buildings/capital-bay-tower-2-646_xl.jpg" alt="Project 3" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Business Bay Capital Tower A and B</h3>
+                            <p class="text-gray-600 mb-4">Capital Bay Tower B is a 19-storey mixed-use building in Capitol Bay, Business Bay, Dubai.</p>
+                            <a href="https://propsearch.ae/dubai/capital-bay-tower-b" class="text-amber-500 hover:text-amber-600 font-semibold">View Details &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 4 -->
+                     <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://jouzy.com/wp-content/uploads/2021/07/01-1-13.jpg" alt="Project 3" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">DuBiotech Headquarter</h3>
+                            <p class="text-gray-600 mb-4">Science and business park located in Al Barsha, Dubai.</p>
+                            <a href="#" class="text-amber-500 hover:text-amber-600 font-semibold">View Details &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 5 -->
+                     <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://abvrock.com/wp-content/uploads/2020/12/University-Office-Tower-1536x1536.jpg" alt="Project 3" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">KAUST University Building 13</h3>
+                            <p class="text-gray-600 mb-4">International graduate-level science and technology research university.</p>
+                            <a href="#" class="text-amber-500 hover:text-amber-600 font-semibold">View Details &rarr;</a>
+                        </div>
+                </div>
+               <!-- Project Card 6 -->
+                     <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://neom.scene7.com/is/image/neom/prl-new-op-news?scl=1" alt="Project 3" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Project Trojena,Sindala island</h3>
+                            <p class="text-gray-600 mb-4">Trojena is situated on the mountain of Jebel al Lawz at altitudes up to 2,600 meters above sea level.</p>
+                            <a href="#" class="text-amber-500 hover:text-amber-600 font-semibold">View Details &rarr;</a>
+                        </div>
+                    </div>
+                <!-- Project Card 7 -->
+                        <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                            <img src="https://www.arup.com/globalassets/images/projects/e/emirates-terminal-3/emirates-terminal-3-hero.jpg?width=1840&height=1035&quality=80" alt="Project 3" class="w-full h-56 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Dubai Airport Terminal 3</h3>
+                                <p class="text-gray-600 mb-4">Terminal 3 is an airport terminal at Dubai International Airport, located in Dubai, United Arab Emirates.</p>
+                                <a href="#" class="text-amber-500 hover:text-amber-600 font-semibold">View Details &rarr;</a>
+                            </div>
+                        </div>
+                <!-- Project Card 8 -->
+                        <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTAwtK--4iDZ1TVGKMtGGdY-fmCViHxO90SA&s" alt="Project 3" class="w-full h-56 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">King Abdullah Airport Jeddah</h3>
+                                <p class="text-gray-600 mb-4">King Abdulaziz International Airport, is a major international airport serving the cities of Jeddah and Mecca in Saudi Arabia.</p>
+                                <a href="#" class="text-amber-500 hover:text-amber-600 font-semibold">View Details &rarr;</a>
+                            </div>
+                        </div>
+                </div> 
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">About Us</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Building the future on a foundation of quality and trust.</p>
+                    <div class="mt-4 w-24 h-1 bg-amber-500 mx-auto"></div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center gap-12 mb-16">
+                    <div class="md:w-1/2">
+                        <img src="logo.png" alt="Our Legacy" class="rounded-lg shadow-2xl">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Who We Are</h3>
+                        <p class="text-gray-600 mb-4">
+                            MACEAST INTERNATIONAL CONTRACTING AND TRADING PRIVATE LIMITED was incorporated on 28 December 2020. As a private, non-government company registered with the Registrar of Companies, Mumbai, we are specialists in Construction Management and Facilities Management.
+                        </p>
+                        <p class="text-gray-600">
+                            Our corporate identity is built on a foundation of integrity and a commitment to excellence in every project we undertake.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <!-- Mission Card -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg border-l-4 border-amber-500">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Our Mission</h3>
+                        <p class="text-gray-600">To deliver high-quality, cost-effective projects on schedule by employing and supporting motivated, flexible, and focused teams. We value the importance of our relationships and will continue to remain fair and true in our dealings with all employees, clients, vendors, and partners.</p>
+                    </div>
+                    <!-- Vision Card -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg border-l-4 border-amber-500">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Our Vision</h3>
+                        <p class="text-gray-600">To be the preeminent provider of superior construction services by consistently improving the quality of our product; to add value for clients through innovation, foresight, integrity, and aggressive performance.</p>
+                    </div>
+                </div>
+
+                <div class="text-left bg-gray-50 p-8 rounded-lg shadow-lg border-l-4 border-amber-500 mb-16">
+                     <h3 class="text-2xl font-bold text-gray-800 mb-4">Key Company Information</h3>
+                     <p class="text-gray-700 mb-2"><strong class="font-semibold">Directors:</strong> ARMAN ALI and ROMAN SHAIKH.</p>
+                     <p class="text-gray-700"><strong class="font-semibold">Corporate Identification Number (CIN):</strong> U45309MH2020PTC348896</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="bg-amber-100 p-6 rounded-lg shadow-md">
+                        <span class="text-4xl font-bold text-amber-600 block">25+</span>
+                        <p class="text-gray-700 mt-2 font-semibold">Years of Experience</p>
+                    </div>
+                    <div class="bg-amber-100 p-6 rounded-lg shadow-md">
+                        <span class="text-4xl font-bold text-amber-600 block">Multiple</span>
+                        <p class="text-gray-700 mt-2 font-semibold">Projects Completed</p>
+                    </div>
+                    <div class="bg-amber-100 p-6 rounded-lg shadow-md">
+                        <span class="text-4xl font-bold text-amber-600 block">200+</span>
+                        <p class="text-gray-700 mt-2 font-semibold">Skilled Professionals</p>
+                    </div>
+                    <div class="bg-amber-100 p-6 rounded-lg shadow-md">
+                        <span class="text-4xl font-bold text-amber-600 block">100%</span>
+                        <p class="text-gray-700 mt-2 font-semibold">Client Satisfaction</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section id="locations" class="locations-bg bg-slate-900 text-white py-20 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center">
+                    <!-- Left Content -->
+                    <div class="lg:w-1/2 w-full mb-10 lg:mb-0">
+                        <h2 class="text-4xl font-bold mb-4">Our <span class="text-amber-500">locations</span></h2>
+                        <div class="flex flex-wrap items-center gap-4 mb-6">
+                            <button data-target="india" class="location-tab flex items-center justify-center py-2 px-4 text-sm font-semibold rounded-full focus:outline-none transition-colors duration-300">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 20l-4.95-5.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                                INDIA
+                            </button>
+                            <button data-target="uae" class="location-tab flex items-center justify-center py-2 px-4 text-sm font-semibold rounded-full focus:outline-none transition-colors duration-100 active-tab">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 20l-4.95-5.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                                UAE
+                            </button>
+                            <button data-target="ksa" class="location-tab flex items-center justify-center py-2 px-4 text-sm font-semibold rounded-full focus:outline-none transition-colors duration-300">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 20l-4.95-5.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                                SAUDI ARABIA
+                            </button>
+                            <button data-target="sudan" class="location-tab flex items-center justify-center py-2 px-4 text-sm font-semibold rounded-full focus:outline-none transition-colors duration-300">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 20l-4.95-5.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                                SUDAN
+                            </button>
+                            
+                        </div>
+
+
+                        <!-- Location Details -->
+                        <div id="locations-content">
+                            <div id="uae" class="location-content">
+                                <h3 class="text-xl font-bold text-gray-200 uppercase tracking-wider mb-3">UAE Associate Office</h3>
+                                <p class="text-gray-300 mb-2">White Rock Contracting LLC UAE</p>
+                                <p class="text-gray-300">Tel: +91 8286373330</p>
+                                <p class="text-gray-300">Mail: maceast20@gmail.com</p>
+                            </div>
+                            <div id="ksa" class="location-content hidden">
+                                <h3 class="text-xl font-bold text-gray-200 uppercase tracking-wider mb-3">KSA Associate Office</h3>
+                                <p class="text-gray-300 mb-2">Faten Bint Abdullah bin Saad Al Maglouth Gen. Cont. Est.</p>
+                                <p class="text-gray-300">Tel: +91 8286373330</p>
+                                <p class="text-gray-300">Mail: maceast20@gmail.com</p>
+                            </div>
+                             <div id="sudan" class="location-content hidden">
+                                <h3 class="text-xl font-bold text-gray-200 uppercase tracking-wider mb-3">Sudan Associate Office</h3>
+                                <p class="text-gray-300 mb-2"> Foton Contracting Sudan</p>
+                                <p class="text-gray-300">Tel: +91 8286373330</p>
+                                <p class="text-gray-300">Mail: maceast20@gmail.com</p>
+                            </div>
+                            <div id="india" class="location-content hidden">
+                                <h3 class="text-xl font-bold text-gray-200 uppercase tracking-wider mb-3">Head Office</h3>
+                                <p class="text-gray-300 mb-2">1st floor, Divine Mansion building-1156 ,bonkode ram nagar sect-12D , kopar khairane ,  400709</p>
+                                <p class="text-gray-300">Tel: +91 8286373330</p>
+                                <p class="text-gray-300">Mail: maceast20@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Globe -->
+                    <div class="lg:w-1/2 w-full flex justify-center items-center">
+                        <!-- Map Images -->
+                        <div class="relative w-64 h-64 md:w-80 md:h-80">
+                           <img id="map-uae" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/United_Arab_Emirates_on_the_globe_%28United_Arab_Emirates_centered%29.svg/640px-United_Arab_Emirates_on_the_globe_%28United_Arab_Emirates_centered%29.svg.png" alt="World map with UAE highlighted" class="location-map w-full h-full object-contain absolute inset-0">
+                           <img id="map-ksa" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Saudi_Arabia_on_the_globe_%28Afro-Eurasia_centered%29.svg/640px-Saudi_Arabia_on_the_globe_%28Afro-Eurasia_centered%29.svg.png" alt="World map with Saudi Arabia highlighted" class="location-map w-full h-full object-contain absolute inset-0 hidden">
+                           <img id="map-sudan" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sudan_on_the_globe_%28Africa_centered%29_%28de-facto%29.svg/640px-Sudan_on_the_globe_%28Africa_centered%29_%28de-facto%29.svg.png" alt="World map with Sudan highlighted" class="location-map w-full h-full object-contain absolute inset-0 hidden">
+                           <img id="map-india" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/India_on_the_globe_%28India_centered%29.svg/1200px-India_on_the_globe_%28India_centered%29.svg.png?20140121233032" alt="World map with India highlighted" class="location-map w-full h-full object-contain absolute inset-0 hidden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Query Section -->
+        <section id="contact-query" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Have a Query?</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Have a question or a project in mind? We'd love to hear from you.</p>
+                    <div class="mt-4 w-24 h-1 bg-amber-500 mx-auto"></div>
+                </div>
+                <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <form id="query-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="query-name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                                <input type="text" id="query-name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                            </div>
+                            <div>
+                                <label for="query-email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                                <input type="email" id="query-email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="query-phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" id="query-phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                            </div>
+                            <div>
+                                <label for="query-subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                <input type="text" id="query-subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="query-message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="query-message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" id="query-submit-btn" class="bg-amber-500 text-white font-bold py-3 px-8 rounded-full hover:bg-amber-600 transition-transform duration-300 transform hover:scale-105">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                    <div id="query-feedback" class="text-center mt-6"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-400 py-6">
+        <div class="container mx-auto px-6 flex flex-col sm:flex-row justify-between items-center">
+            <p class="text-sm text-center sm:text-left mb-4 sm:mb-0">&copy; 2020-2024 MACEAST. All Rights Reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-white transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="hover:text-white transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.001 1.802c-2.396 0-2.703.01-3.652.052a3.097 3.097 0 00-1.804.664 3.097 3.097 0 00-.664 1.804c-.042.949-.052 1.256-.052 3.652s.01 2.703.052 3.652a3.097 3.097 0 00.664 1.804 3.097 3.097 0 001.804.664c.949.042 1.256.052 3.652.052s2.703-.01 3.652-.052a3.097 3.097 0 001.804-.664 3.097 3.097 0 00.664-1.804c.042-.949.052-1.256-.052-3.652s-.01-2.703-.052-3.652a3.097 3.097 0 00-.664-1.804 3.097 3.097 0 00-1.804-.664c-.949-.042-1.256-.052-3.652-.052zM12 6.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 1.802a3.333 3.333 0 110 6.666 3.333 3.333 0 010-6.666zm5.338-3.205a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z" clip-rule="evenodd" /></svg>
+                </a>
+                 <a href="#" class="hover:text-white transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                 </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // --- CONFIGURATION ---
+        // This is the deployment URL for your Google Apps Script.
+        // It handles BOTH the CV form and the Query form.
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyVYjLbFOEJRrOBdX-Ltf8QXUQhPQXfqNIpjuG6zEGjoTMDdGiMLgYSLr8fBazJCjbF/exec";
+
+
+        // --- HERO SLIDER ---
+    document.addEventListener('DOMContentLoaded', function() {
+        const slides = document.querySelectorAll('.hero-slider .slide');
+        let current = 0;
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+        function nextSlide() {
+            current = (current + 1) % slides.length;
+            showSlide(current);
+        }
+        if (slides.length > 1) {
+            setInterval(nextSlide, 5000); // Change slide every 5 seconds
+            showSlide(0);
+        } else if (slides.length === 1) {
+            showSlide(0);
+        }
+    });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Locations Tab script
+        const locationTabs = document.querySelectorAll('.location-tab');
+        const locationContents = document.querySelectorAll('.location-content');
+        const locationMaps = document.querySelectorAll('.location-map');
+
+        locationTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = tab.dataset.target;
+
+                // Update tab styles
+                locationTabs.forEach(t => {
+                    t.classList.remove('active-tab');
+                });
+                tab.classList.add('active-tab');
+
+                // Update content visibility
+                locationContents.forEach(content => {
+                    if (content.id === target) {
+                        content.classList.remove('hidden');
+                    } else {
+                        content.classList.add('hidden');
+                    }
+                });
+
+                // Update map visibility
+                locationMaps.forEach(map => {
+                    if (map.id === `map-${target}`) {
+                        map.classList.remove('hidden');
+                    } else {
+                        map.classList.add('hidden');
+                    }
+                });
+            });
+        });
+        
+        // --- Query Form Submission ---
+        const queryForm = document.getElementById('query-form');
+        const querySubmitBtn = document.getElementById('query-submit-btn');
+        const queryFeedback = document.getElementById('query-feedback');
+
+        if (queryForm) {
+            queryForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                querySubmitBtn.disabled = true;
+                querySubmitBtn.innerHTML = `<i class="fas fa-spinner fa-spin mr-2"></i> Sending...`;
+
+                const formData = new FormData(queryForm);
+                const data = Object.fromEntries(formData.entries());
+                data.formType = 'generalQuery'; 
+
+                try {
+                    const response = await fetch(WEB_APP_URL, {
+                        method: 'POST',
+                        body: JSON.stringify(data),
+                        headers: { 'Content-Type': 'text/plain;charset=utf-8' } // Required for Apps Script
+                    });
+                    
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    
+                    const result = await response.json();
+
+                    if (result.result === "success") {
+                        queryFeedback.innerHTML = `<p class="text-green-600 font-semibold">Thank you! Your message has been sent successfully.</p>`;
+                        queryForm.reset();
+                    } else {
+                        throw new Error(result.error || 'Unknown error');
+                    }
+                } catch (error) {
+                    console.error("Query submission error:", error);
+                    queryFeedback.innerHTML = `<p class="text-red-500">Sorry, there was an error. Please try again later.</p>`;
+                } finally {
+                    querySubmitBtn.disabled = false;
+                    querySubmitBtn.innerHTML = 'Send Message';
+                }
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
+
